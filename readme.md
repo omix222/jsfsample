@@ -9,7 +9,7 @@
 ```
 
 ## アクセスURL(ローカル)
-- ServletSample
+- jsf.sample.ServletSample
   - http://localhost:8080/jsfsample
 
 - JSF sample
