@@ -3,10 +3,12 @@
 ## How to build and deploy
 
 - ``mvn package``でwar作成
-- 出来たwarをサーバのautodeployフォルダにコピー
+- GlassFishを起動し、出来たwarをサーバのautodeployフォルダにコピー
 ```bash
+  /opt/glassfish5/glassfish/bin/asadmin start-domain
   cp target/jsfsample.war /opt/glassfish5/glassfish/domains/domain1/autodeploy
 ```
+- ``sh buildAndRun.sh`` でGlassfishのDockerイメージでRunまで出来るが、JSFが動かないのでNG。。
 
 ## アクセスURL(ローカル)
 - jsf.sample.ServletSample
